@@ -8,9 +8,9 @@ import joblib
 from hsml.schema import Schema
 from hsml.model_schema import ModelSchema
 
-import src.config as config
-from src.paths import MODELS_DIR
-from src.logger import get_logger
+import src.helpers.config as config
+from src.helpers.paths import MODELS_DIR
+from src.helpers.logger import get_logger
 
 logger = get_logger()
 

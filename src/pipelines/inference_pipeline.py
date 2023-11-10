@@ -4,15 +4,15 @@ from datetime import datetime
 import pandas as pd
 import fire
 
-from src.inference import (
+from src.helpers.inference import (
     load_batch_of_features_from_store,
     load_model_from_registry,
     get_model_predictions
 )
-from src.feature_store_api import get_feature_store
-from src import config
-from src.model_registry_api import get_latest_model_from_registry
-from src.logger import get_logger
+from src.helpers.feature_store_api import get_feature_store
+from src.helpers import config
+from src.helpers.model_registry_api import get_latest_model_from_registry
+from src.helpers.logger import get_logger
 
 logger = get_logger()
 
