@@ -11,22 +11,22 @@ features:
 
 # trains a new model and stores it in the model registry
 training:
-	poetry run python scripts/training_pipeline.py
+	poetry run python src/pipelines/training_pipeline.py
 
 # generates predictions and stores them in the feature store
 inference:
-	poetry run python scripts/inference_pipeline.py
+	poetry run python src/pipelines/inference_pipeline.py
 
 # backfills the feature store with historical data
 backfill:
-	poetry run python scripts/backfill_feature_group.py
+	poetry run python src/pipelines/backfill_feature_group.py
 
 # starts the Streamlit app
 frontend:
-	poetry run streamlit run src/frontend.py
+	poetry run streamlit run src/helpers/frontend.py
 
 monitoring:
-	poetry run streamlit run src/frontend_monitoring.py
+	poetry run streamlit run src/helpers/frontend_monitoring.py
 
 #################################################################################
 # Self Documenting Commands                                                     #
