@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "src"
+name = "ml-nyc_taxi_demand_predictor"
 version = "0.1.0"
-description = ""
+description = "Taxi demand predictor service"
 authors = ["Marc-Steffen Kaesz <mkaesz@msk.pub>"]
 readme = "README.md"
 
