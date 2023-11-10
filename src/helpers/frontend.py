@@ -8,12 +8,12 @@ import streamlit as st
 import geopandas as gpd
 import pydeck as pdk
 
-from src.inference import (
+from src.helpers.inference import (
     load_predictions_from_store,
     load_batch_of_features_from_store
 )
-from src.paths import DATA_DIR
-from src.plot import plot_one_sample
+from src.helpers.paths import DATA_DIR
+from src.helpers.plot import plot_one_sample
 
 st.set_page_config(layout="wide")
 

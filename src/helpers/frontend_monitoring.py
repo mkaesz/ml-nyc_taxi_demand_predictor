@@ -6,7 +6,7 @@ import streamlit as st
 from sklearn.metrics import mean_absolute_error
 import plotly.express as px
 
-from src.monitoring import load_predictions_and_actual_values_from_store
+from src.helpers.monitoring import load_predictions_and_actual_values_from_store
 
 st.set_page_config(layout="wide")
 

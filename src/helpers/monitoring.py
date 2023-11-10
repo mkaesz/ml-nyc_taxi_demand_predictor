@@ -2,8 +2,8 @@ from datetime import datetime, timedelta
 
 import pandas as pd
 
-import src.config as config
-from src.feature_store_api import get_feature_store, get_feature_group
+import src.helpers.config as config
+from src.helpers.feature_store_api import get_feature_store, get_feature_group
 
 
 def load_predictions_and_actual_values_from_store(
