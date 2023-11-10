@@ -9,14 +9,14 @@ from sklearn.model_selection import TimeSeriesSplit
 from sklearn.metrics import mean_absolute_error
 import optuna
 
-from src.data import transform_ts_data_into_features_and_target
-from src import config
-from src.data_split import train_test_split
-from src.feature_store_api import get_feature_store
-from src.model_registry_api import push_model_to_registry
-from src.model import get_pipeline
-from src.discord import send_message_to_channel
-from src.logger import get_logger
+from src.helpers.data import transform_ts_data_into_features_and_target
+from src.helpers import config
+from src.helpers.data_split import train_test_split
+from src.helpers.feature_store_api import get_feature_store
+from src.helpers.model_registry_api import push_model_to_registry
+from src.helpers.model import get_pipeline
+from src.helpers.discord import send_message_to_channel
+from src.helpers.logger import get_logger
 
 logger = get_logger()
 
@@ -62,8 +62,8 @@ def get_features_and_targets(
     targets and returns it as a pandas DataFrame.
     """
     # feature_view = get_pointer_to_feature_view()
-    from src.config import FEATURE_VIEW_METADATA
-    from src.feature_store_api import get_or_create_feature_view
+    from src.helpers.config import FEATURE_VIEW_METADATA
+    from src.helpers.feature_store_api import get_or_create_feature_view
     feature_view = get_or_create_feature_view(FEATURE_VIEW_METADATA)
 
     # generate training data from the feature view
@@ -96,7 +96,7 @@ def split_data(
     
     X_train, y_train, X_test, y_test = train_test_split(
         features_and_target,
-        cutoff_date,
+        cutoff_date.tz_localize('utc'),
         target_column_name='target_rides_next_hour'   
     )
     logger.info(f'{X_train.shape=}')

@@ -738,6 +738,20 @@ files = [
 ]
 
 [[package]]
+name = "discordwebhook"
+version = "1.0.3"
+description = "discordwebhlok is a python library         for discord webhook with discord rest api on Python 3.6 and above."
+optional = false
+python-versions = ">=3.6.0"
+files = [
+    {file = "discordwebhook-1.0.3-py3-none-any.whl", hash = "sha256:0dddc400d631c57795cae03939aa37163299d2d7e3361036fa508836326c7ea6"},
+    {file = "discordwebhook-1.0.3.tar.gz", hash = "sha256:b2a89cc322e036c36f694f23a02023e79d6916f5b6be127de2733b7b1f93445c"},
+]
+
+[package.dependencies]
+requests = "*"
+
+[[package]]
 name = "entrypoints"
 version = "0.4"
 description = "Discover and load entry points from installed packages."
@@ -4082,4 +4096,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.12"
-content-hash = "d6d65221ed52fc2b523325b2a1742be2399c982aa74f5a76e87b4ea9c500a0a1"
+content-hash = "0a3f8f6cf0676128932b38e252eab2d9d69deb9c39165c677dadac938f02067d"
