@@ -108,8 +108,9 @@ def load_model_from_registry():
     )
 
     model_dir = model.download()
-    model = joblib.load(Path(model_dir)  / 'model.pkl')
-
+    print(model_dir)
+    model = joblib.load(model_dir + '/'+ config.MODEL_NAME + '.pkl')
+    print(model)
     return model
 
 def load_predictions_from_store(
