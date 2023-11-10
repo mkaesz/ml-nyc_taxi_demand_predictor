@@ -1,5 +1,5 @@
 import os
-from src.feature_store_api import FeatureGroupConfig, FeatureViewConfig
+from src.helpers.feature_store_api import FeatureGroupConfig, FeatureViewConfig
 
 
 HOPSWORKS_PROJECT_NAME = os.getenv('HOPSWORKS_PROJECT_NAME')

@@ -4,8 +4,8 @@ from dataclasses import dataclass
 import hsfs
 import hopsworks
 
-import src.config as config
-from src.logger import get_logger
+import src.helpers.config as config
+from src.helpers.logger import get_logger
 
 logger = get_logger()
 
