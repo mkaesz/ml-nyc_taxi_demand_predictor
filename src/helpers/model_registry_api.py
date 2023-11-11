@@ -51,7 +51,7 @@ def push_model_to_registry(
         input_example=X_train_sample,
         model_schema=model_schema
     )
-    model.save(path[0])
+    model.save(str(MODELS_DIR))
 
     return model.version
 
