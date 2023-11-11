@@ -25,8 +25,10 @@ FEATURE_VIEW_METADATA = FeatureViewConfig(
 )
 
 MODEL_NAME = "taxi_demand_predictor_next_hour"
+MODEL_FILE_NAME = "taxi_demand_predictor_next_hour.pkl"
+
 # TODO: remove MODEL_VERSION as it is not used anywhere
-MODEL_VERSION = 3
+MODEL_VERSION = 10
 
 # added for monitoring purposes
 # TODO remove FEATURE_GROUP_MODEL_PREDICTIONS and use FEATURE_GROUP_PREDICTIONS_METADATA instead

@@ -35,7 +35,7 @@ def push_model_to_registry(
 ) -> int:
     """"""
     # save the model to disk
-    path = joblib.dump(model, MODELS_DIR / 'model.pkl')
+    path = joblib.dump(model, MODELS_DIR / config.MODEL_NAME)
 
     # define the input and output schema
     input_schema = Schema(X_train_sample)
@@ -62,6 +62,6 @@ def get_latest_model_from_registry() -> Pipeline:
     logger.info(f'Loading model version {model.version}')
 
     model_dir = model.download()
-    model = joblib.load(Path(model_dir)  / 'model.pkl')
+    model = joblib.load(Path(model_dir)  / config.MODEL_FILE_NAME )
 
     return model

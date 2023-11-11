@@ -40,8 +40,8 @@ def inference(
     #     primary_key = ['pickup_location_id', 'pickup_hour'],
     #     event_time='pickup_hour',
     # )
-    from src.config import FEATURE_GROUP_PREDICTIONS_METADATA
-    from src.feature_store_api import get_or_create_feature_group
+    from src.helpers.config import FEATURE_GROUP_PREDICTIONS_METADATA
+    from src.helpers.feature_store_api import get_or_create_feature_group
     feature_group = get_or_create_feature_group(FEATURE_GROUP_PREDICTIONS_METADATA)
     feature_group.insert(predictions, write_options={"wait_for_job": False})
     
