@@ -77,17 +77,17 @@ ml-nyc_taxi_demand_predictor/
     └── ui                       # Streamlit web apps.
 ```
 ## Technologies, Frameworks, Services, Tools
-|  <!-- -->                             |   |
-|-------------------------|---|
-| Language                |   |
-| Feature Store           |   |
-| Model Registry          |   |
-| ML Framework            |   |
-| Dependency Management   |   |
-| Web Application Framework |   |
-| ML Algorithm            |   |
-| Workflow Tool           |   |
-| Hyperparameter Tuning Framework |   |
+| Category                        | Used in this repo |
+|---------------------------------|-------------------|
+| Language                        | Python 3          |
+| Feature Store                   | Hopsworks         |
+| Model Registry                  | Hopsworks         |
+| ML Framework                    | Scikit-Learn      |
+| Dependency Management           | Poetry            |
+| Web Application Framework       | Streamlit         |
+| ML Algorithm                    | LightGBM, XGBoost |
+| Workflow Tool                   | Github Actions    |
+| Hyperparameter Tuning Framework | Optuna            |
 
 
 ## Credits
