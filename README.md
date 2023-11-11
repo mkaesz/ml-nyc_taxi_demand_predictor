@@ -80,14 +80,14 @@ ml-nyc_taxi_demand_predictor/
 | Category                        | Used in this repo |
 |---------------------------------|-------------------|
 | Language                        | Python 3          |
+| Dependency Management           | Poetry            |
+| ML Framework                    | Scikit-Learn      |
+| ML Algorithm                    | LightGBM, XGBoost |
+| Hyperparameter Tuning Framework | Optuna            |
 | Feature Store                   | Hopsworks         |
 | Model Registry                  | Hopsworks         |
-| ML Framework                    | Scikit-Learn      |
-| Dependency Management           | Poetry            |
 | Web Application Framework       | Streamlit         |
-| ML Algorithm                    | LightGBM, XGBoost |
 | Workflow Tool                   | Github Actions    |
-| Hyperparameter Tuning Framework | Optuna            |
 
 
 ## Credits
