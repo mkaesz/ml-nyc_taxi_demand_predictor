@@ -2,6 +2,13 @@
 
 Predict Taxi Demand in New York City
 
+## Business problem
+
+The current challenge facing the taxi industry in New York City revolves around effectively managing and meeting the
+fluctuating demand for taxi services. The demand for taxi drivers experiences significant variations throughout the day,
+week, and year, resulting in inefficiencies and difficulties in ensuring a reliable and timely service for passengers.
+The need for a solution that optimally aligns taxi driver availability with fluctuating demand patterns is crucial to
+enhance operational efficiency, customer satisfaction, and the overall sustainability of the taxi industry in New York City.
 ## Quick setup
 
 1. Create a free account at Hopsworks and export Hopsworks API key and project
@@ -38,7 +45,7 @@ Predict Taxi Demand in New York City
     $ make inference
     ```
 
-## Wanna see it in action?
+## See it in action
 ### Hosted on Streamlit Cloud
 - [Live Dashboard with model predictions](https://ml-nyctaxidemandpredictor-benvmeyfusqdlquxsmvnak.streamlit.app/)
 - [Live Dashboard with model monitoring ](https://ml-nyctaxidemandpredictor-ywu8raur4dgutsjodzcap9.streamlit.app/)
@@ -69,3 +76,20 @@ ml-nyc_taxi_demand_predictor/
     ├── pipelines                # Pipelines for feature engineering, training and inference.
     └── ui                       # Streamlit web apps.
 ```
+## Technologies, Frameworks, Services, Tools
+|  <!-- -->                             |   |
+|-------------------------|---|
+| Language                |   |
+| Feature Store           |   |
+| Model Registry          |   |
+| ML Framework            |   |
+| Dependency Management   |   |
+| Web Application Framework |   |
+| ML Algorithm            |   |
+| Workflow Tool           |   |
+| Hyperparameter Tuning Framework |   |
+
+
+## Credits
+
+Based on a tutorial from Pau Labarta Bajo.
