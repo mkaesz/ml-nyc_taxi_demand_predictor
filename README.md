@@ -1,5 +1,4 @@
 # Taxi demand predictor service
-==============================
 
 Predict Taxi Demand in New York City
 
