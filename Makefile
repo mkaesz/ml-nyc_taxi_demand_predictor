@@ -21,6 +21,9 @@ inference:
 backfill:
 	poetry run python src/pipelines/backfill_feature_group.py
 
+backfill-inference:
+	poetry run python src/pipelines/backfill_feature_group.py
+
 # starts the Streamlit app
 frontend:
 	poetry run streamlit run src/helpers/frontend.py
