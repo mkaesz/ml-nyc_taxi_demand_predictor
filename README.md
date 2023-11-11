@@ -14,7 +14,7 @@ Predict Taxi Demand in New York City
 2. Clone the project, cd into the project folder and run
     ```
     $ git clone https://github.com/mkaesz/ml-nyc_taxi_demand_predictor.git
-    $ ch ml-nyc_taxi_demand_predictor
+    $ cd ml-nyc_taxi_demand_predictor
     $ make init
     ```
 
