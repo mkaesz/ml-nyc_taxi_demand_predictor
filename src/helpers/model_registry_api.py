@@ -35,7 +35,7 @@ def push_model_to_registry(
 ) -> int:
     """"""
     # save the model to disk
-    path = joblib.dump(model, MODELS_DIR / config.MODEL_NAME)
+    path = joblib.dump(model, MODELS_DIR / config.MODEL_FILE_NAME)
 
     # define the input and output schema
     input_schema = Schema(X_train_sample)
