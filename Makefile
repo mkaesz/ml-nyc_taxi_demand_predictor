@@ -26,7 +26,7 @@ backfill-inference:
 
 # starts the Streamlit app
 frontend:
-	poetry run streamlit run src/helpers/frontend.py
+	poetry run streamlit run src/ui/frontend.py
 
 monitoring:
-	poetry run streamlit run src/helpers/frontend_monitoring.py
+	poetry run streamlit run src/ui/frontend_monitoring.py
