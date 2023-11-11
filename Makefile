@@ -30,3 +30,4 @@ frontend:
 
 monitoring:
 	poetry run streamlit run src/ui/frontend_monitoring.py
+    
