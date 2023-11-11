@@ -41,7 +41,7 @@ def _load_predictions_and_actuals_from_store(
             - `pickup_hour`
             - `rides`
     """
-    return load_predictions_and_actual_values_from_store(from_date, to_date)
+    return load_predictions_and_actual_values_from_store(from_date.tz_localize('utc'), to_date.tz_localize('utc')   )
 
 with st.spinner(text="Fetching model predictions and actual values from the store"):
 
