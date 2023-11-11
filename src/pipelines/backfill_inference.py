@@ -3,13 +3,13 @@ from pdb import set_trace as stop
 
 import pandas as pd
 
-from src.inference import (
+from src.helpers.inference import (
     load_batch_of_features_from_store,
     load_model_from_registry,
     get_model_predictions
 )
-from src.feature_store_api import get_feature_store
-import src.config as config
+from src.helpers.feature_store_api import get_feature_store
+import src.helpers.config as config
 
 def run(current_date: pd.Timestamp) -> None:
     """Runs inference onthe given `current_date`
